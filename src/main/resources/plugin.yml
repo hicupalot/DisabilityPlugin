@@ -1,0 +1,12 @@
+name: DisabilityPlugin
+version: 1.0
+main: DisabilityPlugin
+author: hicupalot
+depend: [ProtocolLib]
+
+commands:
+
+permissions:
+  disabilityplugin.debug:
+    descritption: "Shows debug information"
+    default: false
