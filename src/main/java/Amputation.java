@@ -9,7 +9,7 @@ public class Amputation implements Listener {
     public void onPlayerTrytoWalk(PlayerMoveEvent e){
     Player player = e.getPlayer();
     FileConfiguration config = DisabilityPlugin.getInstance().getConfig();
-    if (config.getList("amputated").contains(player.getUniqueId().toString())) {
+    if (config.getStringList("amputated").contains(player.getUniqueId().toString())) {
         if (!player.isJumping()){
             e.setCancelled(true);
         }

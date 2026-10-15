@@ -28,7 +28,7 @@ public class SummonWheelchair implements CommandExecutor {
         if (wheelchair.getAttribute(Attribute.STEP_HEIGHT) != null) {
             wheelchair.getAttribute(Attribute.STEP_HEIGHT).setBaseValue(0.51); //stops it going upstairs
 
-            NamespacedKey key = new NamespacedKey((Plugin) this, "wheelchair");
+            NamespacedKey key = new NamespacedKey(DisabilityPlugin.getInstance(), "wheelchair");
             wheelchair.getPersistentDataContainer().set(key, PersistentDataType.BOOLEAN, true);
             wheelchair.addPassenger(player);
         }
